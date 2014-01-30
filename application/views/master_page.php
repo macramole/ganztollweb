@@ -33,8 +33,18 @@
     </head>
     <body>
 		<div id="mainWrapper" class="container">
-			<header class="row">
-				
+			<header>
+				<div class="row">
+					<div class="col-2">
+						<img src="images/botonera.png" />
+					</div>
+					<div class="col-9">
+						
+					</div>
+					<div class="col-1">
+						<img src="images/fcb-bot.png" />
+					</div>
+				</div>
 			</header>
 			<mp:Content />
 		</div>

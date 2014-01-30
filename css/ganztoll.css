@@ -12,3 +12,9 @@ section#home .flecha
 {
 	padding: 0;
 }
+
+header img
+{
+	position: absolute;
+	z-index: 50000;
+}
