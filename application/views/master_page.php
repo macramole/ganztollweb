@@ -36,7 +36,7 @@
 			<header>
 				<div class="row">
 					<div class="col-2">
-						<img src="images/botonera.png" />
+						<img src="images/botonera.png" /> a
 					</div>
 					<div class="col-9">
 						
