@@ -11,10 +11,23 @@ section#home img
 section#home .flecha
 {
 	padding: 0;
+	opacity: 0;
+	transition: opacity 0.3s;
 }
 
 header img
 {
 	position: absolute;
 	z-index: 50000;
+	max-width: 100%;
+}
+
+header .botonera
+{
+	padding: 0;
+}
+
+header .facebook
+{
+	text-align: right;
 }

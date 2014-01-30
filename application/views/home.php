@@ -28,7 +28,11 @@
 		});
 
 		$(window).resize( function() {
-			$('section#home .flecha').css( 'margin-top', $(document).height() / 2 - $('section#home .flecha').height() / 2 );
+			$('section#home .flecha').css('opacity',0);
+			setTimeout( function() {
+				$('section#home .flecha').css( 'margin-top', $('body').height() / 2 - $('section#home .flecha').height() / 2 );
+				$('section#home .flecha').css('opacity',1);
+			}, 400 );
 		});
 
 		$(window).resize();

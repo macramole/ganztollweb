@@ -35,13 +35,13 @@
 		<div id="mainWrapper" class="container">
 			<header>
 				<div class="row">
-					<div class="col-2">
-						<img src="images/botonera.png" /> a
+					<div class="col-4 col-md-2 botonera">
+						<img src="images/botonera.png" />
 					</div>
-					<div class="col-9">
+					<div class="col-6 col-md-8">
 						
 					</div>
-					<div class="col-1">
+					<div class="col-1 facebook">
 						<img src="images/fcb-bot.png" />
 					</div>
 				</div>
