@@ -28,6 +28,7 @@
 		<script src="https://ajax.googleapis.com/ajax/libs/jqueryui/1.9.2/jquery-ui.min.js" type="text/javascript" charset="utf-8"></script>
 		<script src="js/modernizr.min.js" type="text/javascript" charset="utf-8"></script>
 		<script src="js/jquery.bxslider.min.js" type="text/javascript" charset="utf-8"></script>		
+        <script src="js/main.js" type="text/javascript" charset="utf-8"></script>		
 		
 		<?= $head ?>
     </head>

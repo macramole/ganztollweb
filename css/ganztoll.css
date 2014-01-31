@@ -3,6 +3,11 @@ body
 	
 }
 
+body.changeOrientation
+{
+    background: url("../images/orientation.jpg") no-repeat center center white;
+}
+
 section#home img
 {
 	max-width: 100%;
