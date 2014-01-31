@@ -3,9 +3,14 @@ body
 	
 }
 
-body.changeOrientation
+body.orientation
 {
     background: url("../images/orientation.jpg") no-repeat center center white;
+}
+
+#mainWrapper
+{
+    transition: opacity 0.3s;
 }
 
 section#home img
