@@ -1,6 +1,6 @@
 <?php  if ( ! defined('BASEPATH')) exit('No direct script access allowed');
 /*
-| -------------------------------------------------------------------------
+ | -------------------------------------------------------------------------
 | URI ROUTING
 | -------------------------------------------------------------------------
 | This file lets you re-map URI requests to specific controller functions.
@@ -51,9 +51,9 @@ $route['abm/(:any)/(:any)'] = 'abm/$1/$2';
 
 
 /*// example: '/en/about' -> use controller 'about'
-$route['^es/(.+)$'] = "$1";
+ $route['^es/(.+)$'] = "$1";
 $route['^en/(.+)$'] = "$1";
- 
+
 // '/en' and '/fr' -> use default controller
 $route['^es'] = $route['default_controller'];
 $route['^en$'] = $route['default_controller'];*/

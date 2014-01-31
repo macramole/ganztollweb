@@ -2,7 +2,7 @@
 include_once('MasterController.php');
 
 class Common extends MasterController
-{	
+{
 	public function index()
 	{
 		$this->addContentPage('home');

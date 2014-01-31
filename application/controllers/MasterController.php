@@ -2,18 +2,18 @@
 
 /**
  * Use this class to add some common functionality to your site. Like a navigation menu or whatever you like.
- *  
+ *
  */
 class MasterController extends MY_Controller {
-	
+
 	protected $_pageTitle = 'Ganz Toll';
-	
+
 	public function show($additionalData = array())
 	{
 		/* Add some code here for example	.
-		 * 
-		 */
-		
+		 *
+		*/
+
 		parent::show($additionalData);
 	}
 }
