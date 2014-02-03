@@ -1,5 +1,5 @@
 $( function() {
-    $('section#home .slide').bxSlider({
+	$('section#home .slide').bxSlider({
         auto : false,
         pager : false,
         nextSelector: '.flechaDer',
