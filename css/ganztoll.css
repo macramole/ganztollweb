@@ -11,6 +11,13 @@ body.orientation
 #mainWrapper
 {
     transition: opacity 0.3s;
+	max-width: 97%;
+	margin: 0 auto;
+}
+
+.row
+{
+	margin: 0;
 }
 
 section#home img
@@ -23,6 +30,11 @@ section#home .flecha
 	padding: 0;
 	opacity: 0;
 	transition: opacity 0.3s;
+}
+
+section#home .flechaDer
+{
+	text-align: right;
 }
 
 header img
@@ -39,5 +51,6 @@ header .botonera
 
 header .facebook
 {
-	text-align: right;
+	
+	padding: 0;
 }

@@ -32,18 +32,25 @@
 		<script src="https://ajax.googleapis.com/ajax/libs/jqueryui/1.9.2/jquery-ui.min.js" type="text/javascript" charset="utf-8"></script>
 		<script src="js/modernizr.min.js" type="text/javascript" charset="utf-8"></script>
 		<script src="js/jquery.bxslider.min.js" type="text/javascript" charset="utf-8"></script>		
+		<script src="js/jquery.rwdImageMaps.min.js" type="text/javascript" charset="utf-8"></script>		
         <script src="js/main.js" type="text/javascript" charset="utf-8"></script>		
 		
 		<?= $head ?>
     </head>
     <body>
-		<div id="mainWrapper" class="container">
+		<div id="mainWrapper" class="container-fluid">
 			<header>
 				<div class="row">
-					<div class="col-4 col-md-2 botonera">
-						<img src="images/botonera.png" />
+					<div class="col-4 botonera">
+						<img src="images/botonera.png" usemap="#botoneraMap" id="imgBotonera" />
+						<map id="botoneraMap" name="botoneraMap">
+							<area shape="rect" coords="17,13,68,48" title="" alt="" href="1" target="_blank">
+							<area shape="rect" coords="83,18,142,49" title="" alt="" href="2" target="_blank">
+							<area shape="rect" coords="149,21,185,43" title="" alt="" href="3" target="_blank">
+							<area shape="rect" coords="193,17,247,47" title="" alt="" href="4" target="_blank">
+						</map>
 					</div>
-					<div class="col-6 col-md-8">
+					<div class="col-7">
 						
 					</div>
 					<div class="col-1 facebook">
