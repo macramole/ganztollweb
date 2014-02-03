@@ -23,6 +23,11 @@
 		<link rel="stylesheet" href="css/ganztoll.css" type="text/css" charset="utf-8" />
 		<link rel="stylesheet" href="css/jquery.bxslider.css" type="text/css" charset="utf-8" />
 		
+		<script>
+			//loading gif preload
+			(new Image()).src = 'images/bxslider/bx_loader.gif';
+		</script>
+		
 		<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.8.3/jquery.min.js" type="text/javascript" charset="utf-8"></script>
 		<script src="https://ajax.googleapis.com/ajax/libs/jqueryui/1.9.2/jquery-ui.min.js" type="text/javascript" charset="utf-8"></script>
 		<script src="js/modernizr.min.js" type="text/javascript" charset="utf-8"></script>
