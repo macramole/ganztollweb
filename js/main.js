@@ -1,3 +1,14 @@
+function fixFlechas()
+{
+    $('section#home .flecha').css('opacity',0);
+    setTimeout( function() {
+        flechaHeight = $('.slideWrapper').height() / 2 -  $('section#home .flecha').height() / 2;
+        
+        $('section#home .flecha').css( 'margin-top', flechaHeight );
+        $('section#home .flecha').css('opacity',1);
+    }, 1000 );
+}
+
 $( function() {
     $('section#home .slide').bxSlider({
         auto : false,
@@ -6,7 +17,10 @@ $( function() {
         prevSelector: '.flechaIz',
         nextText: '<img src="images/flecha-der.png" />',
         prevText: '<img src="images/flecha-izq.png" />',
-        oneToOneTouch: false
+        oneToOneTouch: false,
+        onSliderLoad: function() {
+            fixFlechas();
+        }
     });
 
     if ( Modernizr.touch ) //Orientación, aparece un ícono de que gires la pantalla
@@ -21,20 +35,16 @@ $( function() {
             {
                 $('body').removeClass('orientation').height('');
                 $('#mainWrapper').css('opacity', 1);
+                fixFlechas();
             }
         });
 
         $(window).trigger('orientationchange');
     }
-
-
-    $(window).resize( function() {
-        $('section#home .flecha').css('opacity',0);
-        setTimeout( function() {
-            $('section#home .flecha').css( 'margin-top', $('body').height() / 2 - $('section#home .flecha').height() / 2 );
-            $('section#home .flecha').css('opacity',1);
-        }, 400 );
-    });
-    
-    $(window).resize();    
+    else
+    {
+        $(window).resize( function() {
+            fixFlechas();
+        });
+    }
 });
