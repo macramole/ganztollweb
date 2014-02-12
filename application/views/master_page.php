@@ -40,14 +40,14 @@
 		<div id="mainWrapper" class="container">
 			<header>
 				<div class="row">
-					<div class="col-4 col-md-2 botonera">
-						<img src="images/botonera.png" />
+					<div class="col-1 botonera">
+						<img src="images/work.png" />
 					</div>
-					<div class="col-6 col-md-8">
-						
+					<div class="col-10 middle">
+						<img src="images/ganz-toll.png" />
 					</div>
 					<div class="col-1 facebook">
-						<img src="images/fcb-bot.png" />
+						<img src="images/mail.png" />
 					</div>
 				</div>
 			</header>

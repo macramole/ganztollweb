@@ -1,11 +1,33 @@
 body
 {
-	
+	margin-top: 1em;
 }
 
 body.orientation
 {
     background: url("../images/orientation.jpg") no-repeat center center white;
+}
+
+header img
+{
+	position: absolute;
+	z-index: 50000;
+	max-width: 100%;
+}
+
+header .botonera
+{
+	padding: 0;
+}
+
+header .facebook
+{
+	text-align: right;
+}
+
+header .middle
+{
+    text-align: center;
 }
 
 #mainWrapper
@@ -25,19 +47,7 @@ section#home .flecha
 	transition: opacity 0.3s;
 }
 
-header img
+section#home .slideWrapper
 {
-	position: absolute;
-	z-index: 50000;
-	max-width: 100%;
-}
-
-header .botonera
-{
-	padding: 0;
-}
-
-header .facebook
-{
-	text-align: right;
+    padding: 0;
 }
