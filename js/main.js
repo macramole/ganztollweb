@@ -10,7 +10,9 @@ function fixFlechas()
 }
 
 $( function() {
-    $('section#home .slide').bxSlider({
+    
+	//Slide
+	$('section#home .slide').bxSlider({
         auto : false,
         pager : false,
         nextSelector: '.flechaDer',
@@ -22,6 +24,9 @@ $( function() {
             fixFlechas();
         }
     });
+	
+	//rwdImageMaps (para que funcione resizeando)
+	$('img[usemap]').rwdImageMaps();
 
     if ( Modernizr.touch ) //Orientación, aparece un ícono de que gires la pantalla
     {

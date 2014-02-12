@@ -32,12 +32,13 @@
 		<script src="https://ajax.googleapis.com/ajax/libs/jqueryui/1.9.2/jquery-ui.min.js" type="text/javascript" charset="utf-8"></script>
 		<script src="js/modernizr.min.js" type="text/javascript" charset="utf-8"></script>
 		<script src="js/jquery.bxslider.min.js" type="text/javascript" charset="utf-8"></script>		
+		<script src="js/jquery.rwdImageMaps.min.js" type="text/javascript" charset="utf-8"></script>		
         <script src="js/main.js" type="text/javascript" charset="utf-8"></script>		
 		
 		<?= $head ?>
     </head>
     <body>
-		<div id="mainWrapper" class="container">
+		<div id="mainWrapper" class="container-fluid">
 			<header>
 				<div class="row">
 					<div class="col-1 botonera">
@@ -45,7 +46,7 @@
 					</div>
 					<div class="col-10 middle">
 						<img src="images/ganz-toll.png" />
-					</div>
+                    </div>    
 					<div class="col-1 facebook">
 						<img src="images/mail.png" />
 					</div>
