@@ -53,6 +53,25 @@
 				</div>
 			</header>
 			<mp:Content />
+            <footer>
+                <div class="row">
+                    <div class="col-2 nopadding">
+                        <div class="row nomargin">
+                            <div class="col-12 nopadding">
+                                <a href="#" target="_blank"><img src="images/redes/facebook.jpg" /></a>
+                                <a href="#" target="_blank"><img src="images/redes/linkedin.jpg" /></a>
+                                <a href="#" target="_blank"><img src="images/redes/tumblr.jpg" /></a>
+                                <a href="#" target="_blank"><img src="images/redes/instagram.jpg" /></a>
+                                <a href="#" target="_blank"><img src="images/redes/twitter.jpg" /></a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-9"></div>
+                    <div class="col-1 corner">
+                        <a href="#" target="_blank"><img src="images/dau.jpg" /></a>
+                    </div>
+                </div>
+            </footer>
 		</div>
 		
 		<mp:Magico />
