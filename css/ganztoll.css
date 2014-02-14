@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 body
 {
 	
@@ -58,4 +59,126 @@ header .facebook
 {
 	
 	padding: 0;
+=======
+body
+{
+	
+}
+
+body.orientation
+{
+    background: url("../images/orientation.jpg") no-repeat center center white;
+}
+
+.nopadding
+{
+    padding: 0 !important;
+}
+
+.nomargin
+{
+    margin: 0 !important;
+}
+
+header
+{
+    position: absolute;
+    top: 1em;
+    width: 98%;
+    z-index: 1;
+}
+
+
+header img
+{
+	/*position: absolute;
+	z-index: 50000;*/
+	max-width: 100%;
+}
+
+header .botonera
+{
+	padding: 0;
+}
+
+header .facebook
+{
+	padding: 0;
+    text-align: right;
+}
+
+header .middle
+{
+    text-align: center;
+}
+
+header .middle img
+{
+    max-width: 10%;
+}
+
+#mainWrapper
+{
+    transition: opacity 0.3s;
+	max-width: 98%;
+	margin: 0 auto;
+}
+
+.row
+{
+	margin: 0;
+}
+
+section#home
+{
+    width: 95%;
+    /*position: relative;
+    top: -4em;*/
+    z-index: 0;
+    margin: 0 auto;
+}
+
+section#home img
+{
+	max-width: 100%;
+}
+
+section#home .flecha
+{
+	padding: 0;
+	opacity: 0;
+	transition: opacity 0.3s;
+}
+
+section#home .flecha img
+{
+    max-width: 60%;
+}
+
+section#home .flechaDer
+{
+	text-align: right;
+}
+
+footer
+{
+    position: relative;
+    bottom: 1em;
+    width: 100%;
+}
+
+footer img
+{
+    max-width: 16%;
+}
+
+footer .corner
+{
+    text-align: right;
+}
+
+footer .corner img
+{
+    max-width: 100%;
+>>>>>>> 4bc1af19153556e5ed119e82479936f9b357cfae
 }

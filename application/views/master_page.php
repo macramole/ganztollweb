@@ -41,24 +41,37 @@
 		<div id="mainWrapper" class="container-fluid">
 			<header>
 				<div class="row">
-					<div class="col-4 botonera">
-						<img src="images/botonera.png" usemap="#botoneraMap" id="imgBotonera" />
-						<map id="botoneraMap" name="botoneraMap">
-							<area shape="rect" coords="17,13,68,48" title="" alt="" href="1" target="_blank">
-							<area shape="rect" coords="83,18,142,49" title="" alt="" href="2" target="_blank">
-							<area shape="rect" coords="149,21,185,43" title="" alt="" href="3" target="_blank">
-							<area shape="rect" coords="193,17,247,47" title="" alt="" href="4" target="_blank">
-						</map>
+					<div class="col-1 botonera">
+						<img src="images/work.png" />
 					</div>
-					<div class="col-7">
-						
-					</div>
+					<div class="col-10 middle">
+						<img src="images/ganz-toll.png" />
+                    </div>    
 					<div class="col-1 facebook">
-						<img src="images/fcb-bot.png" />
+						<img src="images/mail.png" />
 					</div>
 				</div>
 			</header>
 			<mp:Content />
+            <footer>
+                <div class="row">
+                    <div class="col-2 nopadding">
+                        <div class="row nomargin">
+                            <div class="col-12 nopadding">
+                                <a href="#" target="_blank"><img src="images/redes/facebook.jpg" /></a>
+                                <a href="#" target="_blank"><img src="images/redes/linkedin.jpg" /></a>
+                                <a href="#" target="_blank"><img src="images/redes/tumblr.jpg" /></a>
+                                <a href="#" target="_blank"><img src="images/redes/instagram.jpg" /></a>
+                                <a href="#" target="_blank"><img src="images/redes/twitter.jpg" /></a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-9"></div>
+                    <div class="col-1 corner">
+                        <a href="#" target="_blank"><img src="images/dau.jpg" /></a>
+                    </div>
+                </div>
+            </footer>
 		</div>
 		
 		<mp:Magico />

@@ -1,4 +1,5 @@
-/magico/
 /application/core/
 /application/config/database.php
 /.htaccess
+/magicopkg/
+

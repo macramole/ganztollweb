@@ -49,7 +49,7 @@ $active_record = true;
 
 $db['default']['hostname'] = 'localhost';
 $db['default']['username'] = 'root';
-$db['default']['password'] = 'asdasd';
+$db['default']['password'] = '';
 $db['default']['database'] = 'ganztoll';
 $db['default']['dbdriver'] = 'mysql';
 $db['default']['dbprefix'] = '';
