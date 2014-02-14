@@ -1,65 +1,3 @@
-<<<<<<< HEAD
-body
-{
-	
-}
-
-body.orientation
-{
-    background: url("../images/orientation.jpg") no-repeat center center white;
-}
-
-#mainWrapper
-{
-    transition: opacity 0.3s;
-	max-width: 97%;
-	margin: 0 auto;
-}
-
-.row
-{
-	margin: 0;
-}
-
-section#home img
-{
-	max-width: 100%;
-}
-
-section#home .flecha
-{
-	padding: 0;
-	opacity: 0;
-	transition: opacity 0.3s;
-}
-
-section#home .flechaDer
-{
-	text-align: right;
-}
-
-section#home .slideWrapper
-{
-	padding: 0;
-}
-
-header img
-{
-	position: absolute;
-	z-index: 50000;
-	max-width: 100%;
-}
-
-header .botonera
-{
-	padding: 0;
-}
-
-header .facebook
-{
-	
-	padding: 0;
-=======
 body
 {
 	
@@ -180,5 +118,4 @@ footer .corner
 footer .corner img
 {
     max-width: 100%;
->>>>>>> 4bc1af19153556e5ed119e82479936f9b357cfae
 }
