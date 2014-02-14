@@ -37,6 +37,11 @@ section#home .flechaDer
 	text-align: right;
 }
 
+section#home .slideWrapper
+{
+	padding: 0;
+}
+
 header img
 {
 	position: absolute;
