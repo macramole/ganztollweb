@@ -1,3 +1,5 @@
+var slider = null;
+
 function fixFlechas()
 {
     $('section#home .flecha').css('opacity',0);
@@ -7,12 +9,27 @@ function fixFlechas()
         $('section#home .flecha').css( 'margin-top', flechaHeight );
         $('section#home .flecha').css('opacity',1);
     }, 1000 );
+	
+	
+	// Calculo padding para que quede bien en la pantalla
+	/*
+	screenWidth = $(window).width();
+	screenHeight = $(window).height();
+	screenRatio = screenWidth / screenHeight;
+	
+	if ( screenRatio > 1.8 ) //1.8 es mas o menos 16:9
+	{
+		padding = screenRatio * 6 / 2;
+		alert(padding);
+		$("section#home .slideWrapper").css('padding', '0 ' + padding + '%');
+		slider.reloadSlider(sliderOptions);
+	}*/
 }
 
 $( function() {
     
 	//Slide
-	$('section#home .slide').bxSlider({
+	sliderOptions = {
         auto : false,
         pager : false,
         nextSelector: '.flechaDer',
@@ -20,10 +37,16 @@ $( function() {
         nextText: '<img src="images/flecha-der.png" />',
         prevText: '<img src="images/flecha-izq.png" />',
         oneToOneTouch: false,
-        onSliderLoad: function() {
-            fixFlechas();
-        }
-    });
+		onSliderLoad : function() { fixFlechas(); }
+	};
+	
+	slider = $('section#home .slide').bxSlider(sliderOptions);
+	
+	delete sliderOptions.onSliderLoad;
+	delete sliderOptions.nextText;
+	delete sliderOptions.prevText;
+	delete sliderOptions.prevSelector;
+	delete sliderOptions.nextSelector;
 	
 	//rwdImageMaps (para que funcione resizeando)
 	$('img[usemap]').rwdImageMaps();

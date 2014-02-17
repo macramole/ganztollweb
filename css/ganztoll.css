@@ -5,7 +5,7 @@ body
 
 body.orientation
 {
-    background: url("../images/orientation.jpg") no-repeat center center white;
+    background: url("../images/orientation_2.jpg") no-repeat center center white;
 }
 
 .nopadding
@@ -31,7 +31,7 @@ header img
 {
 	/*position: absolute;
 	z-index: 50000;*/
-	max-width: 100%;
+	max-width: 80%;
 }
 
 header .botonera
@@ -52,7 +52,7 @@ header .middle
 
 header .middle img
 {
-    max-width: 10%;
+    max-width: 60%;
 }
 
 #mainWrapper
@@ -90,12 +90,17 @@ section#home .flecha
 
 section#home .flecha img
 {
-    max-width: 60%;
+    max-width: 40%;
 }
 
 section#home .flechaDer
 {
 	text-align: right;
+}
+
+section#home .slideWrapper
+{
+	padding: 0 6%;
 }
 
 footer
@@ -117,5 +122,15 @@ footer .corner
 
 footer .corner img
 {
-    max-width: 100%;
+    max-width: 50%;
+}
+
+footer .socialWrapper
+{
+	white-space: nowrap;
+}
+
+footer .socialWrapper a
+{
+	
 }

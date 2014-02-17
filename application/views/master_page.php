@@ -44,9 +44,11 @@
 					<div class="col-1 botonera">
 						<img src="images/work.png" />
 					</div>
-					<div class="col-10 middle">
+					<div class="col-4"></div>
+					<div class="col-2 middle">
 						<img src="images/ganz-toll.png" />
                     </div>    
+					<div class="col-4"></div>
 					<div class="col-1 facebook">
 						<img src="images/mail.png" />
 					</div>
@@ -57,17 +59,13 @@
                 <div class="row">
                     <div class="col-2 nopadding">
                         <div class="row nomargin">
-                            <div class="col-12 nopadding">
-                                <a href="#" target="_blank"><img src="images/redes/facebook.jpg" /></a>
-                                <a href="#" target="_blank"><img src="images/redes/linkedin.jpg" /></a>
-                                <a href="#" target="_blank"><img src="images/redes/tumblr.jpg" /></a>
-                                <a href="#" target="_blank"><img src="images/redes/instagram.jpg" /></a>
-                                <a href="#" target="_blank"><img src="images/redes/twitter.jpg" /></a>
+                            <div class="col-12 nopadding socialWrapper">
+                                <a href="#" target="_blank"><img src="images/redes/facebook.jpg" /></a><a href="#" target="_blank"><img src="images/redes/linkedin.jpg" /></a><a href="#" target="_blank"><img src="images/redes/tumblr.jpg" /></a><a href="#" target="_blank"><img src="images/redes/instagram.jpg" /></a><a href="#" target="_blank"><img src="images/redes/twitter.jpg" /></a>
                             </div>
                         </div>
                     </div>
                     <div class="col-9"></div>
-                    <div class="col-1 corner">
+                    <div class="col-1 corner nopadding">
                         <a href="#" target="_blank"><img src="images/dau.jpg" /></a>
                     </div>
                 </div>
