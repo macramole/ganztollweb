@@ -2,7 +2,7 @@
 <html>
     <head>
         <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
-		<meta name="viewport" content="width=device-width; initial-scale=1.0; maximum-scale=1.0; user-scalable=no" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
         <meta name="description" content="Ganz Toll">
 
 		<meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -26,12 +26,13 @@
 		<script>
 			//loading gif preload
 			(new Image()).src = 'images/bxslider/bx_loader.gif';
+			(new Image()).src = 'images/orientation.jpg';
 		</script>
 		
 		<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.8.3/jquery.min.js" type="text/javascript" charset="utf-8"></script>
 		<script src="https://ajax.googleapis.com/ajax/libs/jqueryui/1.9.2/jquery-ui.min.js" type="text/javascript" charset="utf-8"></script>
 		<script src="js/modernizr.min.js" type="text/javascript" charset="utf-8"></script>
-		<script src="js/jquery.bxslider.min.js" type="text/javascript" charset="utf-8"></script>		
+		<script src="js/jquery.bxslider.js" type="text/javascript" charset="utf-8"></script>		
 		<script src="js/jquery.rwdImageMaps.min.js" type="text/javascript" charset="utf-8"></script>		
         <script src="js/main.js" type="text/javascript" charset="utf-8"></script>		
 		
@@ -66,12 +67,12 @@
                     </div>
                     <div class="col-9"></div>
                     <div class="col-1 corner nopadding">
-                        <a href="#" target="_blank"><img src="images/dau.jpg" /></a>
+                        <img src="images/dau.jpg" />
                     </div>
                 </div>
             </footer>
 		</div>
-		
+		<div id="madeBy">Diseño a upa 2014 / Desarrollo <a href="http://www.parleboo.com" target="_blank">Pârleboo</a><a href="#" class="spacer">&nbsp;</a></div>
 		<mp:Magico />
     </body>
 </html>

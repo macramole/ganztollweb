@@ -5,7 +5,7 @@ body
 
 body.orientation
 {
-    background: url("../images/orientation_2.jpg") no-repeat center center white;
+    background: url("../images/orientation.jpg") no-repeat center center white;
 }
 
 .nopadding
@@ -76,6 +76,11 @@ section#home
     margin: 0 auto;
 }
 
+section#home .slide
+{	
+	list-style: none;
+}
+
 section#home img
 {
 	max-width: 100%;
@@ -133,4 +138,37 @@ footer .socialWrapper
 footer .socialWrapper a
 {
 	
+}
+
+#madeBy
+{
+	position: absolute;
+	text-transform: uppercase;
+	color: #321dd4;
+	white-space: nowrap;
+	font-weight: bold;
+	opacity: 0;
+	top: 0;
+	left: 0;
+	padding-right: 20px;
+	
+	transition: opacity 0.2s;
+}
+
+#madeBy.visible
+{
+	opacity: 1;
+}
+
+#madeBy a
+{
+	color: #321dd4;
+	text-decoration: underline;
+}
+
+#madeBy a.spacer
+{
+	text-decoration: none;
+	display: inline-block;
+	padding-left: 10px;
 }
