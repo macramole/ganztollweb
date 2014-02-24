@@ -5,7 +5,18 @@ class Common extends MasterController
 {
 	public function index()
 	{
-		$this->addContentPage('home');
+		$sqlStills = '
+			SELECT
+				s.*,
+				( SELECT filename FROM files f WHERE f.node_id = s.id AND f.table = "stills" ORDER BY f.weight ASC, f.id DESC LIMIT 1 ) AS imagen,
+				( SELECT GROUP_CONCAT(codigo SEPARATOR "") FROM coordenadas c WHERE c.idStill = s.id ) AS coordenadas
+			FROM
+				stills s
+		';
+		
+		$stills = $this->db->query($sqlStills)->result_array();
+				
+		$this->addContentPage('home', array('stills' => $stills));
 		$this->show();
 	}
 }

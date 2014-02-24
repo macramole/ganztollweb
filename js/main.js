@@ -1,14 +1,31 @@
 var slider = null;
+var sliderNeedsReload = false;
+
+function fixAll()
+{
+	fixImagesSize();
+	fixFlechas();
+}
 
 function fixFlechas()
 {
     $('section#home .flecha').css('opacity',0);
     setTimeout( function() {
-        flechaHeight = $('.slideWrapper').height() / 2 -  $('section#home .flecha').height() / 2;
+        
+		if ( sliderNeedsReload )
+		{
+			slider.reloadSlider();
+			console.log("reloaded");
+		}
+		
+		flechaHeight = $('.slideWrapper').height() / 2 -  $('section#home .flecha').height() / 2;
         
         $('section#home .flecha').css( 'margin-top', flechaHeight );
         $('section#home .flecha').css('opacity',1);	
 		
+		fixMadeBy();
+		
+		sliderNeedsReload = true;
     }, 1000 );
 	
 	// Calculo padding para que quede bien en la pantalla
@@ -38,6 +55,21 @@ function fixMadeBy()
 	$('#madeBy .spacer').width( $upa.width() );
 }
 
+function fixImagesSize()
+{
+	sliderWidth = null;
+	
+	if ( !isPortrait() ) //no es un movil o es un movil pero no esta en portrait
+		sliderWidth = Math.ceil($('section#home .slideWrapper').width());
+	else //es un movil en portrait
+		sliderWidth = Math.ceil($(window).height());
+	
+	$('section#home .slide img').each( function()
+	{
+		$(this).attr('src', $(this).attr('rel') + '/' + sliderWidth );
+	});
+}
+
 function isPortrait()
 {
 	if ( Modernizr.touch )
@@ -53,18 +85,7 @@ function isPortrait()
 
 $( function() {
     
-	sliderWidth = null;
-	
-	if ( !isPortrait() ) //no es un movil o es un movil pero no esta en portrait
-		sliderWidth = $('section#home .slide').width();
-	else //es un movil en portrait
-		sliderWidth = $(window).height();
-	
-	$('section#home .slide img').each( function()
-	{
-		$(this).attr('src', $(this).attr('rel') + '/' + sliderWidth );
-	});
-	
+	fixImagesSize();
 	
 	//Slide
 	sliderOptions = {
@@ -76,7 +97,7 @@ $( function() {
         prevText: '<img src="images/flecha-izq.png" />',
 		preloadImages: 'all',
         oneToOneTouch: false,
-		onSliderLoad : function() { fixFlechas(); fixMadeBy(); }
+		onSliderLoad : function() { if ( !sliderNeedsReload ) { fixFlechas(); fixMadeBy(); } }
 	};
 	
 	slider = $('section#home .slide').bxSlider(sliderOptions);
@@ -104,11 +125,7 @@ $( function() {
     }
     else
     {
-		fixMadeBy();
-		
-        $(window).resize( function() {
-			fixFlechas();
-        });
+		$(window).resize( $.debounce( 250, fixAll ) );
     }
 	
 	//upa link

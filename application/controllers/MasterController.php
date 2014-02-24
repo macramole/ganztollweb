@@ -16,4 +16,21 @@ class MasterController extends MY_Controller {
 
 		parent::show($additionalData);
 	}
+	
+	public function responsiveImage($filename, $width)
+	{
+		/*
+		 * restrinjo en 3 tamaños
+		 * 
+		 * 500px
+		 * 1000px
+		 * 1500px
+		 */
+		if ( $width <= 500 )
+			parent::responsiveImage ($filename, 500);
+		elseif ( $width > 500 && $width <= 1000 )
+			parent::responsiveImage ($filename, 1000);
+		else
+			parent::responsiveImage ($filename, 1500);
+	}
 }

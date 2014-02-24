@@ -55,7 +55,7 @@ $config['magico_facebook_page'] = false;
 |
 |
 */
-$config['magico_sitename'] = "newWebsite";
+$config['magico_sitename'] = "Ganztoll";
 
 /*
  |--------------------------------------------------------------------------
@@ -72,7 +72,7 @@ $config['magico_sitename'] = "newWebsite";
 */
 
 $config['magico_nav'] = array(
-		'Ejemplo' => array()
+		'Still' => array()
 );
 
 /*
