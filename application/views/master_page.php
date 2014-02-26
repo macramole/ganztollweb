@@ -34,6 +34,7 @@
 		
 		<script src="js/modernizr.min.js" type="text/javascript" charset="utf-8"></script>
 		<script src="js/jquery.bxslider.min.js" type="text/javascript" charset="utf-8"></script>		
+		<script src="js/jquery.fitvids.js" type="text/javascript" charset="utf-8"></script>		
 		<script src="js/jquery.rwdImageMaps.min.js" type="text/javascript" charset="utf-8"></script>		
 		<script src="js/jquery.ba-throttle-debounce.min.js" type="text/javascript" charset="utf-8"></script>		
 		<script src="js/main.js" type="text/javascript" charset="utf-8"></script>

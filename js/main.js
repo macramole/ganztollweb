@@ -1,5 +1,6 @@
 var slider = null;
 var sliderNeedsReload = false;
+var actualImageSize = null;
 
 function fixAll()
 {
@@ -15,7 +16,6 @@ function fixFlechas()
 		if ( sliderNeedsReload )
 		{
 			slider.reloadSlider();
-			console.log("reloaded");
 		}
 		
 		flechaHeight = $('.slideWrapper').height() / 2 -  $('section#home .flecha').height() / 2;
@@ -58,16 +58,35 @@ function fixMadeBy()
 function fixImagesSize()
 {
 	sliderWidth = null;
+	newImageSize = null;
 	
 	if ( !isPortrait() ) //no es un movil o es un movil pero no esta en portrait
 		sliderWidth = Math.ceil($('section#home .slideWrapper').width());
 	else //es un movil en portrait
 		sliderWidth = Math.ceil($(window).height());
 	
-	$('section#home .slide img').each( function()
+	if ( sliderWidth <= 500 )
+		newImageSize = 500;
+	else if ( sliderWidth > 500 && sliderWidth <= 1000 )
+		newImageSize = 1000;
+	else
+		newImageSize = 1500;
+	
+	if ( newImageSize != actualImageSize )
 	{
-		$(this).attr('src', $(this).attr('rel') + '/' + sliderWidth );
-	});
+		$('section#home .slide .imagen img').not('.drag').each( function()
+		{
+			$(this).attr('src', $(this).attr('rel') + '/' + sliderWidth );
+		});
+
+		$('section#home .slide .video, section#home .slide .video2').fitVids();
+		actualImageSize = newImageSize;
+		sliderNeedsReload = true;
+	}
+	else
+	{
+		sliderNeedsReload = false;
+	}
 }
 
 function isPortrait()
@@ -86,6 +105,7 @@ function isPortrait()
 $( function() {
     
 	fixImagesSize();
+	sliderNeedsReload = false;
 	
 	//Slide
 	sliderOptions = {
@@ -96,6 +116,7 @@ $( function() {
         nextText: '<img src="images/flecha-der.png" />',
         prevText: '<img src="images/flecha-izq.png" />',
 		preloadImages: 'all',
+		video: false,
         oneToOneTouch: false,
 		onSliderLoad : function() { if ( !sliderNeedsReload ) { fixFlechas(); fixMadeBy(); } }
 	};
@@ -140,6 +161,18 @@ $( function() {
 	$('#madeBy .spacer').click( function(e) {
 		e.preventDefault();
 		$('#madeBy').toggleClass('visible');
+	});
+	
+	$('body').keydown( function(e) {
+		if ( e.which == 37 )
+		{
+			slider.goToPrevSlide();
+		}
+		
+		if ( e.which == 39 )
+		{
+			slider.goToNextSlide();
+		}
 	});
 	
 });

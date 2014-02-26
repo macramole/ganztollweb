@@ -35,7 +35,8 @@ class Still extends MY_Model {
 			$_POST['weight'] = $count + 1;
 		}
 		else {
-			$this->ci->db->query('UPDATE stills SET weight = weight + 1 WHERE weight >= ?', array($_POST['weight']));
+			if ( $_POST['weight'] != $this->fields['weight']->value )
+				$this->ci->db->query('UPDATE stills SET weight = weight + 1 WHERE weight >= ?', array($_POST['weight']));
 		}
 		
 		parent::save();

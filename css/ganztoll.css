@@ -1,6 +1,6 @@
 body
 {
-	overflow-x: hidden;
+	
 }
 
 body.orientation
@@ -81,6 +81,25 @@ section#home .slide
 	list-style: none;
 }
 
+section#home .slide .video .videoWrapper
+{
+	width: 54%; 
+	margin: 0 auto;
+}
+
+section#home .slide .video2 > img
+{
+	float: left;
+	max-width: 35%;
+}
+
+section#home .slide .video2 .videoWrapper
+{
+	float: left;
+	width: 52%;
+	padding-top: 20%;
+}
+
 section#home img
 {
 	max-width: 100%;
@@ -150,7 +169,6 @@ footer .socialWrapper a
 	opacity: 0;
 	top: 0;
 	left: 0;
-	padding-right: 20px;
 	
 	transition: opacity 0.2s;
 }
